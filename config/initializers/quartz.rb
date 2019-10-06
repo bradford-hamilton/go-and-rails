@@ -1,0 +1,1 @@
+Quartz = Quartz::Client.new(file_path: 'app/go/exported_functions.go')
