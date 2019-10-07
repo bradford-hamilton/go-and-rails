@@ -5,11 +5,17 @@ class UsersController < ApplicationController
   def index
     @users = User.all
 
-    # Almost instant
-    Quartz[:functions].call('LoopNSum', 'Num' => 300000000)
+    # Vritually instant
+    # Quartz[:functions].call('LoopNSum', 'Num' => 300000000)
+
+    # Around 2 seconds
+    # Quartz[:functions].call('LoopNString', 'Num' => 100000)
 
     # Around 20 seconds
-    loop_n_sum(300000000)
+    # loop_n_sum(300000000)
+
+    # Around 16 seconds
+    # loop_n_string(100000)
 
     render json: @users
   end
@@ -53,6 +59,16 @@ class UsersController < ApplicationController
       end
 
       sum
+    end
+
+    def loop_n_string(n)
+      str = ""
+
+      n.times do |i|
+        str += i.to_s
+      end
+
+      str
     end
 
     # Use callbacks to share common setup or constraints between actions.

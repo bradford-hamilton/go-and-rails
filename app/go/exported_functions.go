@@ -1,13 +1,18 @@
 package main
 
-import "github.com/DavidHuie/quartz/go/quartz"
+import (
+	"strconv"
+
+	"github.com/DavidHuie/quartz/go/quartz"
+)
 
 type Args struct {
 	Num int
 }
 
 type Response struct {
-	Sum int `json:"sum"`
+	Sum int    `json:"sum"`
+	Str string `json:"str"`
 }
 
 type Function struct{}
@@ -19,7 +24,18 @@ func (f *Function) LoopNSum(args Args, response *Response) error {
 		sum += i
 	}
 
-	*response = Response{sum}
+	*response = Response{Sum: sum}
+	return nil
+}
+
+func (f *Function) LoopNString(args Args, response *Response) error {
+	str := ""
+
+	for i := 0; i < args.Num; i++ {
+		str += strconv.Itoa(i)
+	}
+
+	*response = Response{Str: str}
 	return nil
 }
 
