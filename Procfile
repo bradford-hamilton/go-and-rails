@@ -1,1 +1,0 @@
-web: ./release-tasks.sh
