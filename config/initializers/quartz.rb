@@ -1,6 +1,7 @@
 system("sudo wget -c https://storage.googleapis.com/golang/go1.12.linux-amd64.tar.gz")
 system("sudo tar -C /usr/local -xvzf go1.12.linux-amd64.tar.gz")
 system("export PATH=$PATH:/usr/local/go/bin")
+system("go get github.com/DavidHuie/quartz/go/quartz")
 
 module Quartz::Validations
   def self.check_for_go
