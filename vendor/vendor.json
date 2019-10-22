@@ -3,6 +3,6 @@
 	"ignore": "test",
   "rootPath": "github.com/bradford-hamilton/go-and-rails",
   "heroku": {
-    "install" : ["./app/go/exported_functions.go"]
+    "install" : ["./app/go/..."]
   }
 }
