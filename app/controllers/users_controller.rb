@@ -19,7 +19,7 @@ class UsersController < ApplicationController
     # Around 16 seconds
     # loop_n_string(100000)
 
-    render json: big_num
+    render json: @users
   end
 
   # GET /users/1
