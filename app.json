@@ -1,6 +1,0 @@
-{
-  "name": "go-in-rails",
-  "scripts": {
-    "predeploy": "./go-install.sh"
-  }
-}

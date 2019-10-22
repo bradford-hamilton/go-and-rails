@@ -3,7 +3,7 @@ package main
 import (
 	"strconv"
 
-	"github.com/DavidHuie/quartz/go/quartz"
+	"./quartz"
 )
 
 type Args struct {
