@@ -9,4 +9,4 @@
 #   end
 # end
 puts ENV['PATH']
-Quartz = Quartz::Client.new(file_path: 'app/go/exported_functions.go')
+# Quartz = Quartz::Client.new(file_path: 'app/go/exported_functions.go')

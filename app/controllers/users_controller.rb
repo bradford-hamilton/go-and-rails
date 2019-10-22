@@ -6,7 +6,9 @@ class UsersController < ApplicationController
     @users = User.all
 
     # Vritually instant
-    big_num = Quartz[:functions].call('LoopNSum', 'Num' => 300000000)
+
+    puts ENV['PATH']
+    # big_num = Quartz[:functions].call('LoopNSum', 'Num' => 300000000)
 
     # Around 2 seconds
     # Quartz[:functions].call('LoopNString', 'Num' => 100000)
