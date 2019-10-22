@@ -2,8 +2,6 @@ package main
 
 import (
 	"strconv"
-
-	"github.com/bradford-hamilton/go-and-rails/app/go/quartz"
 )
 
 type Args struct {

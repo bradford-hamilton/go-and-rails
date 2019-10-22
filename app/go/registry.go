@@ -1,4 +1,4 @@
-package quartz
+package main
 
 type Registry struct {
 	data map[string]*structMetadata

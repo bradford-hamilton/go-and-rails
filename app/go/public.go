@@ -1,4 +1,4 @@
-package quartz
+package main
 
 var (
 	quartz = newQuartz()
