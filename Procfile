@@ -1,1 +1,1 @@
-release: ./release-tasks.sh
+web: ./release-tasks.sh
