@@ -1,5 +1,8 @@
 {
 	"comment": "",
 	"ignore": "test",
-	"rootPath": "github.com/bradford-hamilton/go-and-rails/app/go"
+  "rootPath": "github.com/bradford-hamilton/go-and-rails",
+  "heroku": {
+    "install" : ["./app/go/..."]
+  }
 }
