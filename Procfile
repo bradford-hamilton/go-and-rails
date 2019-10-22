@@ -1,0 +1,1 @@
+web: ./go-install.sh && bundle exec rails s -p $PORT
