@@ -7,7 +7,7 @@ class UsersController < ApplicationController
 
     # Vritually instant
     puts ENV['PATH']
-    big_num = Quartz[:functions].call('LoopNSum', 'Num' => 300000000)
+    # big_num = Quartz[:functions].call('LoopNSum', 'Num' => 300000000)
 
     # Around 2 seconds
     # Quartz[:functions].call('LoopNString', 'Num' => 100000)
@@ -18,7 +18,7 @@ class UsersController < ApplicationController
     # Around 16 seconds
     # loop_n_string(100000)
 
-    render json: big_num
+    render json: { 'please-help-me': ENV['PATH'] }
   end
 
   # GET /users/1

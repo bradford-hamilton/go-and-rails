@@ -7,16 +7,15 @@
 # system("export PATH=$PATH:/usr/local/go/bin")
 # system("go get github.com/DavidHuie/quartz/go/quartz")
 
+# module Quartz::Validations
+#   def self.check_for_go
+#     puts ENV['PATH']
+#     go_exists = ENV['PATH'].split(File::PATH_SEPARATOR).any? do |directory|
+#       File.exist?(File.join(directory, 'go'))
+#     end
 
-module Quartz::Validations
-  def self.check_for_go
-    puts ENV['PATH']
-    go_exists = ENV['PATH'].split(File::PATH_SEPARATOR).any? do |directory|
-      File.exist?(File.join(directory, 'go'))
-    end
+#     raise Quartz::ConfigError, 'Go not installed.' unless go_exists
+#   end
+# end
 
-    raise Quartz::ConfigError, 'Go not installed.' unless go_exists
-  end
-end
-
-Quartz = Quartz::Client.new(file_path: 'app/go/exported_functions.go')
+# Quartz = Quartz::Client.new(file_path: 'app/go/exported_functions.go')
