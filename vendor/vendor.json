@@ -1,5 +1,5 @@
 {
 	"comment": "",
 	"ignore": "test",
-	"rootPath": "app/go"
+	"rootPath": "github.com/Galvanize-IT/app/go"
 }
